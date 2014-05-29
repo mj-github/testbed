@@ -1,0 +1,5 @@
+mj_co_user:
+    resource: "@MJCoUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

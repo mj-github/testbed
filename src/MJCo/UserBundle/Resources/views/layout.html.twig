@@ -1,0 +1,16 @@
+
+
+{% block head %}
+    <link rel="stylesheet" href="{{ asset('bundles/mjco/css/mjco.css') }}" />
+{% endblock %}
+
+<h1>MJCO Users</h1>
+<a href="{{ path('_default_index') }}">Index</a>    <a href="{{ path('_default_userlist') }}">Userlist</a>
+<BR><BR>
+{% block body %}
+
+    <div class="block">
+        {% block content %}{% endblock %}
+    </div>
+
+{% endblock %}

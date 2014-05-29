@@ -1,0 +1,11 @@
+{% extends "MJCoUserBundle::layout.html.twig" %}
+
+{% block content %}
+    <u>Userlist</u>
+    <BR>
+    <ul id="navigation">
+        {% for user in users %}
+            <li>ID:{{ user.id }},{{ user.name }}{% if user.level != null %} (Manager:{{user.level}}){% endif %}</li>
+        {% endfor %}
+    </ul>    
+{% endblock %}
