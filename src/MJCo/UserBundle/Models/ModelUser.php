@@ -6,9 +6,16 @@ use MJCo\UserBundle\Entity\User ;
 use MJCo\UserBundle\Entity\Manager ;
 
 class ModelUser {
+
 	protected $em ;
 
-	public function __construct( $entitymanager )
+	/**
+	 * Doctrine EM needed for all functions
+	 * @todo Hook into events instead
+	 * 
+	 * @param DoctrineORMEntityManager $entitymanager
+	 */
+	public function __construct( \Doctrine\ORM\EntityManager $entitymanager )
 	{
         $this->em = $entitymanager ;
 	}
