@@ -6,6 +6,9 @@ use MJCo\UserBundle\Tests\ModelTestCase ;
 
 class ModelUserTest extends \MJCo\UserBundle\Tests\ModelTestCase 
 {
+	/**
+	* @var int
+	*/
 	private $userid ;
 
     public function testDefault()
