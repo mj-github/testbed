@@ -29,4 +29,6 @@ class ModelTestCase extends \PHPUnit_Framework_TestCase
     $options = array_merge($options, array('command' => $command));
     return $this->_application->run(new \Symfony\Component\Console\Input\ArrayInput($options));
   }
+
+  
 }
